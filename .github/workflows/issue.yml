@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Print Issue Title
-        run: echo "Issue Title: ${{ toJSON(github) }}"
+        run: "echo 'Issue Title: ${{ github.event.issue.title }}'"
