@@ -1,0 +1,13 @@
+name: Handle issue
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  print-issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Issue Title
+        run: echo "Issue Title:${{ github }}"
